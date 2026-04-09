@@ -163,7 +163,7 @@ body {
   background: conic-gradient(
     transparent,
     transparent 30%,
-    rgba(167, 139, 250, 0.5) 50%,
+    rgba(167, 139, 250, 0.25) 50%,
     transparent 70%,
     transparent
   );
@@ -193,7 +193,7 @@ body {
   background: conic-gradient(
     transparent,
     transparent 20%,
-    rgba(167, 139, 250, 0.8) 50%,
+    rgba(167, 139, 250, 0.45) 50%,
     transparent 80%,
     transparent
   );
