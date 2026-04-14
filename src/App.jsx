@@ -1,5 +1,6 @@
 import { RiTwitterXFill } from 'react-icons/ri'
 import { GiPerspectiveDiceSixFacesOne } from 'react-icons/gi'
+import LiquidSilk from './LiquidSilk'
 import './App.css'
 
 const projects = [
@@ -23,13 +24,12 @@ const projects = [
 function App() {
   return (
     <>
-      <div
-        className="bg-overlay"
-        style={{ backgroundImage: `url('/cube_mono.webp')` }}
-      />
+      <div className="bg-overlay">
+        <LiquidSilk speed={0.4} scale={1} color="#B3B3B3" noiseIntensity={1.5} rotation={1.2} />
+      </div>
       <div className="page">
         <header className="header">
-          <h1 className="logo"><GiPerspectiveDiceSixFacesOne className="logo-icon" /> Sitx Labs</h1>
+          <h1 className="logo"><GiPerspectiveDiceSixFacesOne className="logo-icon" /> SITX Labs</h1>
           <div className="header-links">
             <a href="https://x.com/sitxlabs" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
               <RiTwitterXFill />
@@ -39,7 +39,7 @@ function App() {
 
         <section className="hero">
           <h2 className="headline">Solana Innovation & Tech Experiments</h2>
-          <p className="subheadline">An incubator building at the intersection of Solana and AI.</p>
+          <p className="subheadline">A startup lab exploring the intersection of Solana and AI.</p>
         </section>
 
         <section className="projects">
@@ -75,7 +75,7 @@ function App() {
         </section>
 
         <footer className="footer">
-          <p>&copy; {new Date().getFullYear()} Sitx Labs</p>
+          <p>&copy; {new Date().getFullYear()} SITX Labs</p>
         </footer>
       </div>
     </>
